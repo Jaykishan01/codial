@@ -1,0 +1,39 @@
+// console.log("Start");
+
+// function importantAction(username, cb =(messgae)=>{
+// console.log
+// }){
+
+//    setTimeout(() => {
+// cb( `Hello world ${username}`)
+//    },2000);
+// }
+
+// // const message = importantAction("Jaykishan",function(message){
+// //     console.log(message)
+// // });
+
+// console.log("stop");
+
+// Callback implementation 
+
+
+// Now we have to learn promises Repersentation 
+
+
+console.log("Satrt here");
+
+const sub = new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        const result =10;
+        if(result === 9) resolve ("Yes Resolved")
+        else reject (new Error("Error found"))
+    }, 1000);
+})
+
+sub.then((res)=>{
+    console.log(res)
+}).catch((err)=>{
+    console.log(err)
+})
+console.log("Stop here");
